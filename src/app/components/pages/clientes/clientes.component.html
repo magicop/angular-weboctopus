@@ -1,0 +1,14 @@
+<!-- CLIENTES *****-->
+
+<div class="divider" id="clientes"><i class="icon-circle"></i></div>
+
+<h1 class="text-center" style="color:#0741ad">Partners Estratégicos</h1>
+
+<div id="oc-clients" class="owl-carousel image-carousel carousel-widget" data-loop="true" data-speed="3000" data-autoplay="2000" data-margin="20" data-nav="false" data-pagi="true" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5"
+    data-items-xl="6">
+    <div class="oc-item" *ngFor="let cliente of clientes">
+        <a href="#"><img *ngIf="cliente.activo" [src]="cliente.img | imagen: 'clientes'"></a>
+    </div>
+</div>
+
+<br>
